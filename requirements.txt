@@ -1,0 +1,14 @@
+torch
+numpy
+tqdm
+wandb
+PyYAML
+soundfile
+librosa
+datasets
+sentencepiece
+matplotlib
+jiwer
+torchcodec
+hydra-core
+omegaconf

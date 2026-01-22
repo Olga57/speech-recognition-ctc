@@ -1,0 +1,18 @@
+defaults:
+  - dataset: librispeech
+  - model: ctc_bilstm
+  - _self_
+
+training:
+  lr: 1e-3
+  batch_size: 16
+  epochs: 50
+  grad_clip: 5.0
+  device: "cuda"
+  use_wandb: true
+  run_name: "ctc_final_run"
+  save_dir: "weights"
+  log_every: 50
+  log_samples: 5
+  log_aug_examples: true
+  num_workers: 0

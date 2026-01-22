@@ -1,0 +1,6 @@
+_target_: src.asr_datasets.custom_dir_dataset.CustomDirDataset
+root_dir: "/content/asr_project/data"
+target_sr: 16000
+max_items: null
+max_train_items: null
+max_valid_items: 200
