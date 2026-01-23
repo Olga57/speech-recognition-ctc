@@ -14,8 +14,10 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
-from src.asr_datasets.librispeech_hf import LibriSpeechHF
-from src.asr_datasets.custom_dir_dataset import CustomDirDataset
+# === ИСПРАВЛЕНО: src.datasets вместо src.asr_datasets ===
+from src.datasets.librispeech_hf import LibriSpeechHF
+from src.datasets.custom_dir_dataset import CustomDirDataset
+
 from src.text.char_tokenizer import CharTokenizer
 from src.model.ctc_model import CTCBiLSTM
 from src.utils.dataloader import ASRCollator
